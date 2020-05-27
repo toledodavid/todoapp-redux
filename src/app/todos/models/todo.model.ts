@@ -6,7 +6,7 @@ export class Todo {
   public completado: boolean;
 
   constructor(text: string) {
-    this.id = new Date().getTime();
+    this.id = Math.random();
     this.text = text;
     this.completado = false;
   }
